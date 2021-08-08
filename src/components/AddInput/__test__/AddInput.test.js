@@ -1,12 +1,5 @@
 import { fireEvent, render, screen } from "@testing-library/react";
-import { BrowserRouter } from "react-router-dom";
 import AddInput from "../AddInput";
-
-const MockAddInput = ({ numberOfIncompleteTasks }) => (
-  <BrowserRouter>
-    <AddInput numberOfIncompleteTasks={numberOfIncompleteTasks} />
-  </BrowserRouter>
-);
 
 describe("AddInput", () => {
   test("should render input element", () => {
